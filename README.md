@@ -84,3 +84,66 @@ One of the hardest aspects to implement is giving real-life actions meaningful g
 ---
 
 > “Grind XP. Grow IRL.” – *Vibe Rantz*
+
+
+# 📝 Software Requirements Specification (SRS) – Milestone 1 Update
+**Project:** Vibe Quest – Gamified Personal Growth Tracker  
+**Milestone 1:** User Account Creation & Authentication System  
+**Version:** 1.1  
+**Date:** 2025-04-25  
+**Author:** Vibe Rantz  
+
+---
+
+## 📌 Changelog
+
+| Date       | Version | Changed By   | Description                                                   |
+|------------|---------|--------------|---------------------------------------------------------------|
+| 2025-04-25 | 1.1     | Vibe Rantz   | Added user registration and login system to functional scope  |
+| 2025-04-25 | 1.1     | Vibe Rantz   | Defined “Hero Name” as the custom user identifier             |
+| 2025-04-25 | 1.1     | Vibe Rantz   | Updated system features and architecture to include auth flow |
+
+---
+
+## 1.0 📋 Functional Requirements (Updated)
+
+- **FR-01**: The system shall allow users to register using an email, password, and Hero Name.
+- **FR-02**: The system shall ensure each Hero Name is unique.
+- **FR-03**: The system shall validate password strength (minimum 8 characters).
+- **FR-04**: The system shall allow users to log in and log out securely.
+- **FR-05**: The system shall display error messages when registration or login fails.
+
+---
+
+## 2.0 🚀 System Features (New Section Added)
+
+### 2.1 – User Authentication Module
+
+- **Description**: Allows users to create accounts and authenticate into the system.
+- **Inputs**: Email, Password, Hero Name  
+- **Outputs**: Confirmation message on success, error feedback on failure  
+- **Priority**: High  
+- **Dependencies**: Database connection, UI registration form  
+
+---
+
+## 3.0 👤 User Classes and Characteristics (Updated)
+
+| User Type       | Description                                        |
+|------------------|----------------------------------------------------|
+| New User         | Registers a new account with email and Hero Name   |
+| Returning User   | Logs in using previously registered credentials    |
+| Admin (Future)   | Manages user roles and permissions                 |
+
+---
+
+## 4.0 📈 Non-Functional Requirements (Updated)
+
+- Passwords must be securely stored using hashing (e.g., bcrypt).
+- Login and registration operations must respond in under 2 seconds.
+- The system must prevent duplicate Hero Names.
+
+---
+
+## 5.0 🧩 System Architecture
+![AuthSystemDiagram](https://github.com/user-attachments/assets/bc9481c4-bcb1-47ac-a40a-f0698263f65a)
