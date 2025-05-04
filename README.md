@@ -147,3 +147,63 @@ One of the hardest aspects to implement is giving real-life actions meaningful g
 
 ## 5.0 🧩 System Architecture
 ![AuthSystemDiagram](https://github.com/user-attachments/assets/bc9481c4-bcb1-47ac-a40a-f0698263f65a)
+
+Project: Vibe Quest – Gamified Personal Growth Tracker
+Milestone 2: Task Creation, XP Tracking, and Skill Allocation
+Version: 1.2
+Date: 2025-05-04
+Author: Vibe Rantz
+
+📌 Changelog
+Date	Version	Changed By	Description
+2025-05-04	1.2	Vibe Rantz	Added Task Creation and XP Logic to functional scope
+2025-05-04	1.2	Vibe Rantz	Introduced Skill Categories: Mind, Body, Creativity, Focus
+2025-05-04	1.2	Vibe Rantz	Outlined the backend logic for XP calculation and skill point allocation
+2025-05-04	1.2	Vibe Rantz	Began prototyping the Skill Tree visual and XP display components
+
+1.0 📋 Functional Requirements (Extended)
+FR-06: The system shall allow users to create custom tasks and assign them to a skill category.
+
+FR-07: The system shall calculate XP based on task difficulty and frequency.
+
+FR-08: The system shall update user XP and level after task completion.
+
+FR-09: The system shall reflect XP gain in the appropriate skill category (e.g., Body for workouts).
+
+FR-10: The system shall persist task data and XP history in the database.
+
+2.0 🚀 System Features (Extended)
+2.2 – Task Engine & XP Calculator
+Description: Enables task creation, tracking, and XP generation based on skill type.
+
+Inputs: Task name, category, difficulty level
+
+Outputs: XP reward, skill progress update
+
+Priority: High
+
+Dependencies: User authentication, skill data structure, database schema
+
+2.3 – Skill Tracker (Prototype Phase)
+Description: Displays user growth across four main categories: Mind, Body, Creativity, and Focus.
+
+Feature Preview: Graph or bar-based progress indicator, color-coded per category.
+
+Priority: Medium (MVP Preview Only)
+
+3.0 👤 User Classes and Characteristics (No Change from 1.1)
+4.0 📈 Non-Functional Requirements (Additional)
+Skill and XP updates must reflect in UI within 1.5 seconds of task completion.
+
+Task entries must support basic CRUD operations (Create, Read, Update, Delete).
+
+UX feedback (e.g., animation or sound cue) should confirm XP gain instantly.
+
+5.0 🧩 System Architecture (Expanded)
+Frontend integration for task forms and skill bars is in development.
+
+XP logic lives server-side with API endpoints handling task completion and XP updates.
+
+SQLite schema includes tables for: Users, Tasks, SkillProgress, and JournalEntries.
+
+
