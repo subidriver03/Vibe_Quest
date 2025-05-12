@@ -207,3 +207,8 @@ XP logic lives server-side with API endpoints handling task completion and XP up
 SQLite schema includes tables for: Users, Tasks, SkillProgress, and JournalEntries.
 
 
+| Date       | Version | Changed By   | Description                                                             |
+|------------|---------|--------------|-------------------------------------------------------------------------|
+| 2025-05-11 | 1.3     | Vibe Rantz   | Implemented in-memory task logic and XP tracker in Blazor WASM app     |
+| 2025-05-11 | 1.3     | Vibe Rantz   | Added TaskBoard UI and XP progress bar visualization on Home page      |
+| 2025-05-11 | 1.3     | Vibe Rantz   | Registered and injected TaskService using singleton DI pattern          |
